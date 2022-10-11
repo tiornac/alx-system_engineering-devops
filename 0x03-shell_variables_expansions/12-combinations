@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" {a..z}{a..z} | sort | sed 's/oo//g'
+printf "%s\n" {a..z}{a..z} | grep -v "oo" | sort
